@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="estilos.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Registro de Vehiculos</title>
+</head>
+
+<body>
+
+
+  <div class="container">
+    
+   
+    <div class="container center">
+      <h1>Registro de Vehiculos</h1>
+    </div>
+
+    <form>
+        <div class="form-group row">
+          <div class="md-6">
+          
+            <p>
+              <label>Marca</label> <br>
+              <input id="marca" class="form-control" type="text" placeholder="Marca">
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <label>serie</label> <br>
+              <input id="modelo" class="form-control" type="text"  placeholder="serie">
+            </p>
+          </div>
+          <div class="col">
+  
+            <p>
+              <label>Modelo</label> <br>
+              <input id="anio" class="form-control" type="number" min="2021" placeholder="modelo">
+            </p>
+          </div>
+        </div>
+        
+        <p>
+          <label>Color</label> <br>
+          <input id="color" class="form-control" type="text" placeholder="Color...">
+        </p>
+        <p>
+          <label>Precio</label> <br>
+          <input id="precio" class="form-control" type="number" placeholder="Precio" min="1">
+        </p> <br>
+  
+      </form>
+  
+      <script src="validar.js">
+      </script>
+    </div>
+    <div class="botones">
+      <button id="registrar" onclick="registrarVehiculo();" class="btn btn-success btn-block" type="button">Registrar
+        Auto</button>
+    </div>
+  
+  
+    
+      <div class="botones">
+        <a class="btn btn-info" href="vehiculos.html">Mostrar vehículos</a>
+      </div>
+      <div class="botones">
+        <a class="btn btn-warning" href="login.html">Cerra Sesión</a>
+      </div>
+
+  <div class="container">
+
+
+ 
+  <script src="validar.js"></script>
+</body>
+
+</html>
